@@ -1,0 +1,326 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import { Icon } from "astro-icon/components";
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="font-sans">
+		<nav class="flex w-full h-16 justify-evenly items-center">
+			<button class="flex font-serif text-3xl">SandbOx</button>
+			<div class="flex">
+				<button class="flex">
+					<div class="flex p-2 m-2 text-sm">Demos</div>
+					<Icon name="fe:arrow-down" class="mt-5 -ml-3" />
+				</butbutton>
+				<button class="flex">
+					<div class="flex p-2 m-2 text-sm">Pages</div>
+					<Icon name="fe:arrow-down" class="mt-5 -ml-3" />
+				</button>
+				<button class="flex">
+					<div class="flex p-2 m-2 text-sm">Proyects</div>
+					<Icon name="fe:arrow-down" class="mt-5 -ml-3" />
+				</button>
+				<button class="flex">
+					<div class="flex p-2 m-2 text-sm">Blog</div>
+					<Icon name="fe:arrow-down" class="mt-5 -ml-3" />
+				</button>
+				<button class="flex">
+					<div class="flex p-2 m-2 text-sm">Blocks</div>
+					<Icon name="fe:arrow-down" class="mt-5 -ml-3" />
+				</button>
+				<button class="flex">
+					<div class="flex p-2 m-2 text-sm">Documentation</div>
+					<Icon name="fe:arrow-down" class="mt-5 -ml-3" />
+				</button>
+				<button class="flex">
+					<Icon name="carbon:warning" class="mt-5 ml-8 m-2" />
+				</button>
+				<button class="flex">
+					<Icon name="ph:magnifying-glass-bold" class="mt-5 m-2" />
+				</button>
+			</div>
+		</nav>
+		<!-- section-One -->
+		<section class="flex justify-evenly h-[600px] bg-gray-100">
+			<div class="flex w-1/2 flex-col p-14 justify-center">
+				<div
+					class="flex ml-32 font-bold w-3/4 text-blue-950 mt-2 mb-2 text-6xl"
+				>
+					We bring solutions <br /> to make life easier
+				</div>
+				<div class="flex text-justify w-1/2 text-blue-950 ml-32 mt-8">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Quidem eligendi quaerat nostrum quibusdam nemo
+				</div>
+				<div
+					class="flex ml-32 mt-8 mb-2 bg-blue-950 text-white w-1/6 justify-center rounded p-2"
+				>
+					Read More
+				</div>
+			</div>
+			<div
+				class="flex bg-[url(https://i.pinimg.com/originals/5d/39/79/5d3979137e26e6d03aafef6a060311f5.jpg)] rounded-lg bg-cover w-1/2"
+			>
+			</div>
+		</section>
+
+		<!-- section-two -->
+		<section class="h-[650px] mt-11 w-full">
+			<div class="font-thin text-center p-6 -mb-3">WHAT WE DO?</div>
+			<div
+				class="flex w-full justify-center text-center font-bold text-3xl mb-8"
+			>
+				The service we offer is specifically <br />
+				designed to meet your needs
+			</div>
+			<!-- linea-uno -->
+			<div class="flex h-64 justify-evenly">
+				<div class="flex w-1/3 m-7">
+					<Icon
+						name="ic:outline-phone"
+						class="text-8xl text-blue-600 m-5 mr-0 mt-0 p-4 pr-0 w-1/4"
+					/>
+					<div class="flex flex-col w-3/4 -ml-5">
+						<div
+							class="flex flex-col p-3 justify-center text-3xl font-bold"
+						>
+							24/7 Support
+						</div>
+						<div
+							class="flex flex-col p-3 justify-center text-justify text-xl"
+						>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Reiciendis minus consequatur illo quia itaque,
+							esse rerum tempora quisquam
+						</div>
+					</div>
+				</div>
+				<div class="flex w-1/3 m-7">
+					<Icon
+						name="ei:check"
+						class="text-8xl text-yellow-400 m-5 mr-0 mt-0 p-4 pr-0 w-1/4"
+					/>
+					<div class="flex flex-col w-3/4 -ml-5">
+						<div
+							class="flex flex-col p-3 justify-center text-3xl font-bold"
+						>
+							Secure Payments
+						</div>
+						<div
+							class="flex flex-col p-3 justify-center text-justify text-xl"
+						>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Reiciendis minus consequatur illo quia itaque,
+							esse rerum tempora quisquam
+						</div>
+					</div>
+				</div>
+				<div class="flex w-1/3 m-7">
+					<Icon
+						name="line-md:cloud-up"
+						class="text-8xl text-orange-500 m-5 mr-0 mt-0 p-4 pr-0 w-1/4"
+					/>
+					<div class="flex flex-col w-3/4 -ml-5">
+						<div
+							class="flex flex-col p-3 justify-center text-3xl font-bold"
+						>
+							Daily Updates
+						</div>
+						<div
+							class="flex flex-col p-3 justify-center text-justify text-xl"
+						>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Reiciendis minus consequatur illo quia itaque,
+							esse rerum tempora quisquam
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- linea-dos -->
+			<div class="flex">
+				<div class="flex">
+					<Icon
+						name="material-symbols:computer-outline"
+						class="text-8xl text-violet-500 m-5 mr-0 mt-0 p-4 pr-0 w-1/4"
+					/>
+					<div class="flex flex-col w-3/4 -ml-5">
+						<div
+							class="flex flex-col p-3 justify-center text-3xl font-bold"
+						>
+							Marker Research
+						</div>
+						<div
+							class="flex flex-col p-3 justify-center text-justify text-xl"
+						>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Reiciendis minus consequatur illo quia itaque,
+							esse rerum tempora quisquam
+						</div>
+					</div>
+				</div>
+				<div class="flex">
+					<Icon
+						name="bxs:conversation"
+						class="text-8xl text-green-400 m-5 mr-0 mt-0 p-4 pr-0 w-1/4"
+					/>
+					<div class="flex flex-col w-3/4 -ml-5">
+						<div
+							class="flex flex-col p-3 justify-center text-3xl font-bold"
+						>
+							Social engagement
+						</div>
+						<div
+							class="flex flex-col p-3 justify-center text-justify text-xl"
+						>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Reiciendis minus consequatur illo quia itaque,
+							esse rerum tempora quisquam
+						</div>
+					</div>
+				</div>
+				<div class="flex">
+					<Icon
+						name="mdi:microphone"
+						class="text-8xl text-pink-400 m-5 mr-0 mt-0 p-4 pr-0 w-1/4"
+					/>
+					<div class="flex flex-col w-3/4 -ml-5">
+						<div
+							class="flex flex-col p-3 justify-center text-3xl font-bold"
+						>
+							Content marketing
+						</div>
+						<div
+							class="flex flex-col p-3 justify-center text-justify text-xl"
+						>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Reiciendis minus consequatur illo quia itaque,
+							esse rerum tempora quisquam
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section-tree -->
+		<section class="h-[700px] mt-11 w-full bg-gray-100">
+			<div class="font-thin text-center p-6 -mb-3">CASE STUDIES</div>
+			<div
+				class="flex w-full justify-center text-center font-bold text-3xl mb-4"
+			>
+				Our awesome proyects with <br />
+				creative ideas and great desing
+			</div>
+			<!-- container-imagenes -->
+			<div class="w-full flex justify-between">
+				<div class="flex w-1/3 flex-col m-14">
+					<div
+						class="flex bg-[url(https://previews.123rf.com/images/puhhha/puhhha1712/puhhha171200369/91511116-reuni%C3%B3n-de-negocios-personas-trabajando-en-proyecto-en-la-oficina-hermosa-sonriente-mujer-y-guapo.jpg)] bg-cover h-60 rounded w-full m-4"
+					>
+					</div>
+					<div class="flex m-3 font-bold">
+						Lorem ipsum dolor sit amet consectetur
+					</div>
+					<div class="flex m-3 -mt-2">
+						<Icon
+							name="fluent:calendar-48-filled"
+							class="text-gray-500 mt-1"
+						/>
+						<div class="flex font-medium text-gray-500">
+							14 Apr 2022
+						</div>
+						<Icon
+							name="lucide:sheet"
+							class="ml-10 text-gray-500 mt-1"
+						/>
+						<div class="flex">coding</div>
+					</div>
+				</div>
+				<div class="flex w-1/3 flex-col m-14">
+					<div
+						class="flex bg-[url(https://media.revistagq.com/photos/5cd31334d1dca857dbc08fdd/16:9/w_2560%2Cc_limit/job%2520meeting.jpg)] bg-cover h-60 rounded w-full m-4"
+					>
+					</div>
+					<div class="flex m-3 font-bold">
+						Lorem ipsum dolor sit amet consectetur
+					</div>
+					<div class="flex m-3 -mt-2">
+						<Icon
+							name="fluent:calendar-48-filled"
+							class="text-gray-500 mt-1"
+						/>
+						<div class="flex font-medium text-gray-500">
+							29 Mar 2022
+						</div>
+						<Icon
+							name="lucide:sheet"
+							class="ml-10 text-gray-500 mt-1"
+						/>
+						<div class="flex">Workspace</div>
+					</div>
+				</div>
+				<div class="flex w-1/3 flex-col m-14">
+					<div
+						class="flex bg-[url(https://cdn1.img.sputniknews.lat/img/108643/17/1086431705_0:125:1920:1210_1920x0_80_0_0_f7edfd1b174258506bd8517cc8136628.jpg)] bg-cover h-60 rounded w-full m-4"
+					>
+					</div>
+					<div class="flex m-3 font-bold">
+						Lorem ipsum dolor sit amet consectetur
+					</div>
+					<div class="flex m-3 -mt-2">
+						<Icon
+							name="fluent:calendar-48-filled"
+							class="text-gray-500 mt-1"
+						/>
+						<div class="flex font-medium text-gray-500">
+							26 feb 2022
+						</div>
+						<Icon
+							name="lucide:sheet"
+							class="ml-10 text-gray-500 mt-1"
+						/>
+						<div class="flex">Meeting</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="bg-gray-300 h-[900px]">
+			<!-- section-four -->
+			<section class="h-[450px] w-full">
+				<div class="flex flex-row justify-around items-center h-full">
+					<div
+						class="flex text-justify text-3xl font-bold w-1/2 text-blue-950 ml-32 mt-8"
+					>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. <br
+						/>
+						Quidem eligendi quaerat nostrum quibusdam nemo
+					</div>
+					<button
+						class="flex ml-32 mt-8 mb-2 bg-blue-950 text-white w-1/6 items-center text-center justify-center rounded p-2"
+					>
+						Try it for free
+					</button>
+				</div>
+			</section>
+
+			<!-- footer -->
+			<footer class="w-full -mt-24 h-[450px]">
+				<div class="border-t-[2px] m-6 border-gray-400"></div>
+			</footer>
+		</div>
+		<slot />
+	</body>
+</html>
+<style is:global></style>
