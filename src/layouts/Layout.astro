@@ -5,6 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import { Icon } from "astro-icon/components";
+import Binding from "../components/Binding.vue";
 ---
 
 <!doctype html>
@@ -18,13 +19,17 @@ import { Icon } from "astro-icon/components";
 		<title>{title}</title>
 	</head>
 	<body class="font-sans">
+		<div class="z-50 m-4 fixed bottom-0 right-0">
+			<Binding client:load />
+		</div>
+
 		<nav class="flex w-full h-16 justify-evenly items-center">
 			<button class="flex font-serif text-3xl">SandbOx</button>
 			<div class="flex">
 				<button class="flex">
 					<div class="flex p-2 m-2 text-sm">Demos</div>
 					<Icon name="fe:arrow-down" class="mt-5 -ml-3" />
-				</butbutton>
+				</button>
 				<button class="flex">
 					<div class="flex p-2 m-2 text-sm">Pages</div>
 					<Icon name="fe:arrow-down" class="mt-5 -ml-3" />
