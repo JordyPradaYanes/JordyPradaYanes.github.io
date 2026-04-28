@@ -150,7 +150,34 @@ body.dark-mode .subtitle {
 
 @media (max-width: 768px) {
   .certificates_grid {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .certificate_card {
+    padding: 20px 14px;
+  }
+  .certificate_icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  .certificate_title {
+    font-size: 0.85rem;
+    min-height: unset;
+    margin-bottom: 6px;
+  }
+  .certificate_entity {
+    font-size: 0.75rem;
+    margin-bottom: 12px;
+  }
+  .certificate_btn {
+    padding: 8px 10px;
+    font-size: 0.78rem;
+    border-radius: 8px;
+  }
+  .certificate_card.premium::after {
+    font-size: 0.55rem;
+    padding: 3px 30px;
+    top: 12px;
+    right: -26px;
   }
 }
